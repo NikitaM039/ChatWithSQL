@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Chat.Api\Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="chat.api\Chat.Api.csproj" />
+    <None Include="Chat.BLL.Services.Contracts\Chat.BLL.Services.Contracts.csproj" />
+    <None Include="chat.bll.services\Chat.BLL.Services.csproj" />
+    <None Include="chat.common.entities\Chat.Common.Entities.csproj" />
+    <None Include="chat.dal.repositories.contracts\Chat.DAL.Repositories.Contracts.csproj" />
+    <None Include="chat.dal.repositories\Chat.DAL.Repositories.csproj" />
+    <None Include="Chat.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.11.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.4" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MSBuild.WebApplication.CopyContentLinkedFiles" Version="1.0.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="System.AppContext" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Context" Version="8.0.0" />
+    <PackageReference Include="System.Reflection.MetadataLoadContext" Version="8.0.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
